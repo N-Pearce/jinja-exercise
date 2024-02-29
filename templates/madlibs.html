@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}{{my_story}} Word Fill{% endblock %}
+
+{% block body %}
+    <h1>Word Fill</h1>
+    <form action="/story" >
+        <select name="story">
+            <option value="0">Once upon a time</option>
+            <option value="1">Rats</option>
+            <option value="2">My Dream</option>
+        </select>
+            <br>
+        place: <input type="text" name="place"></input>
+            <br>
+        noun: <input type="text" name="noun"></input>
+            <br>
+        verb: <input type="text" name="verb"></input>
+            <br>
+        adjective: <input type="text" name="adjective"></input>
+            <br>
+        plural_noun: <input type="text" name="plural_noun"></input>   
+            <br>
+        <button>Submit!</button>
+    </form>
+{% endblock %}
